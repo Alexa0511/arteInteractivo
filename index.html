@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Paint Web</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            background-color: #e5e5f7;
+            background-image: linear-gradient(#cccccc 1px, transparent 1px), linear-gradient(to right, #cccccc 1px, #e5e5f7 1px);
+            background-size: 20px 20px;
+        }
+
+        canvas {
+            border: 2px solid #000;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="botones">
+
+        <label for="colorPicker">Color:</label>
+        <input type="color" id="colorPicker" value="#000000">
+
+        <button id="eraserBtn"><i class="fa-solid fa-eraser"></i></button>
+
+        <label id="brushSizeLabel">Tamaño: 5</label>
+        <input type="range" id="brushSizeSlider" min="1" max="50" value="5">
+        <button id="fillBtn"><i class="fa-solid fa-fill-drip"></i></button>
+
+        <button id="clearBtn"><i class="fa-solid fa-trash"></i></button>
+        <button id="undoBtn"><i class="fa-solid fa-rotate-left"></i></button>
+        <button id="redoBtn"><i class="fa-solid fa-rotate-right"></i></button>
+        <button id="saveBtn"><i class="fa-solid fa-download"></i></button>
+    </div>
+
+    <canvas id="paintCanvas" width="800" height="600"></canvas>
+
+
+
+    <footer>
+        <div class="footer" style="position: unset;">
+            <a>©Daniela Patiño</a>
+            <div>
+                <a href="">Arte Interactivo</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

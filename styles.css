@@ -1,0 +1,55 @@
+.botones {
+    margin-bottom: 25px;
+}
+
+#colorPicker {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 50px;
+    height: 35px;
+    cursor: pointer;
+    background: #fff;
+}
+
+#colorPicker::-webkit-color-swatch {
+    border-radius: 8px;
+    border: none;
+}
+
+#colorPicker::-moz-color-swatch {
+    border-radius: 8px;
+    border: none;
+}
+
+i{
+    font-size: 31px;
+}
+
+button{
+    background-color: white;
+    border: 1px #000 solid;
+}
+
+button:hover{
+    background-color: aliceblue;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.65);
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    position: fixed;
+  }
+  
+  .footer a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: underline;
+    margin: 0 15px 0 10px;
+  }
+
+  
